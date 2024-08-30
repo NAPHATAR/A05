@@ -35,9 +35,6 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
-      vaccine-book-app:
-        specifier: 'link:'
-        version: 'link:'
     devDependencies:
       '@testing-library/jest-dom':
         specifier: ^5.16.5
