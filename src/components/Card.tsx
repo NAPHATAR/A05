@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import InteractiveCard from './InteractiveCard';
 
 interface CardProps {
   hospitalName: string;
@@ -8,11 +9,13 @@ interface CardProps {
 
 export default function Card({ hospitalName, imgSrc }: CardProps) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:underline">
-      <Image className="w-full" src={imgSrc} alt={hospitalName} width={300} height={200}/>
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{hospitalName}</div>
+    <InteractiveCard>
+      <div className="rounded overflow-hidden relative">
+        <Image className="inset-0 w-full h-full object-cover rounded-t-lg" src={imgSrc} alt={hospitalName} width={600} height={400} />
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl">{hospitalName}</div>
+        </div>
       </div>
-    </div>
+    </InteractiveCard>
   );
 }
