@@ -43,11 +43,18 @@ export default function BookingPage() {
               <MenuItem value="Thammasat">Thammasat University Hospital</MenuItem>
             </Select>
           </FormControl>
-          <div className="my-8"/>
-          <DateReserve />
-          <Button variant="contained" color="primary" name="Book Vaccine" className="mt-8">
-            Book Vaccine
-          </Button>
+          <div className="mt-8">
+            <DateReserve />
+          </div>
+          <div className="mt-8 flex justify-center">
+            <Button 
+              variant="contained" 
+              color="primary" 
+              name="Book Vaccine"
+            >
+              Book Vaccine
+            </Button>
+          </div>
         </form>
       </div>
     </div>
