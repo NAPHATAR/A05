@@ -17,9 +17,7 @@ export default function InteractiveCard({ children }: InteractiveCardProps) {
 
   return (
     <div
-      className={`bg-white shadow-lg rounded-lg transition-transform duration-300 ease-in-out ${
-        isHovered ? 'shadow-2xl bg-neutral-200 scale-105' : ''
-      }`}
+      className={isHovered ? "shadow-2xl bg-neutral-200 scale-105 underline" : "bg-white shadow-lg rounded-lg transition-transform duration-300 ease-in-out"}
       onMouseEnter={() => toggleHover(true)}
       onMouseLeave={() => toggleHover(false)}
     >
